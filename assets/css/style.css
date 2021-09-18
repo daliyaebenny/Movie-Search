@@ -16,7 +16,15 @@ header {
     /* justify-content: flex-end; */
     padding: 1rem;
 }
-
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width:75%;
+}
+.laterWatch{
+    float:left;
+    position:relative;
+}
 .search {
     background-color: transparent;
     border: 2px solid #22254b;
@@ -36,10 +44,6 @@ header {
     outline: none;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .movie {
     background-color: #373b69;
@@ -48,7 +52,7 @@ main {
     overflow: hidden;
     position: relative;
     margin: 1rem;
-    width: 300px;
+    width: 25%;
 }
 
 .movie img {
@@ -109,3 +113,14 @@ main {
 #form {
     display: block;
 }
+@media screen and (max-width: 768px){
+    .laterWatch{
+        float:none;
+    }   
+}
+@media screen and (max-width: 1024px){
+    .laterWatch{
+        float:none;
+    } 
+}
+
