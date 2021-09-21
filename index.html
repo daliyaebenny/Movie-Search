@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Movie App</title>
-        <link rel="stylesheet" href="./assets/css/style.css" /> 
-        <link rel ="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css"/>
-        
-    </head>
-    <body>
-        <header>
-            <form id="form">
 
-                <input type="text" id="search" placeholder="Search" class="search"/>
-                <button  class="btn btn-primary mb-2" id ="get_movie">Search</button>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+     <!-- bootstrap library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-            </form>
+</head>
 
-            <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Movie Search</a>
-            </nav> -->
+<body>
+    <header>
+        <form id="form">
 
+            <input type="text" id="search" placeholder="Search for Movies" class="search" />
+            <button class="btn btn-primary mb-2" id="get_movie">Search</button>
 
-        </header>
-        <aside id ="laterWatch">
-            <button  class="btn btn-primary mb-2" id ="clear">Clear</button>   
-            <!-- LAter watch -->
-        </aside>
-        <main id="main">
-        </main>
-        
-         <script src="./assets/js/script.js"></script> 
-    </body>
+        </form>
+    </header>
+    <aside id="laterWatch">
+        <div id="movieList"></div>
+        <button class="btn btn-primary mb-2" id="clear" style="display:none;">Clear</button>
+    </aside>
+    <main id="main">
+    </main>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    //
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
