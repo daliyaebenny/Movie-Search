@@ -33,18 +33,51 @@ function showMovies(movies) {
                 <span class="${getClassByRate(
             vote_average
         )}">${vote_average}</span>
-                
             </div>
-            
             <div class="overview">
                 <h3>Overview:</h3>
                 ${overview}
                 <button id ="saveMovie" class="btn btn-primary mb-2" onClick="saveForLAter(' ${IMGPATH + poster_path},${title}, ${vote_average}')">Watch Later</button> 
-            </div>
-        `;
+                <button type="button" class="btn btn-primary" onClick="showMore('${title}')" data-toggle="modal" data-target="#exampleModalCenter">
+                More
+                </button> 
+            </div>`;
         main.appendChild(movieEl);
     });
 }
+
+function showMore(movieName) {
+    //Using 2nd Api to fetch more information about the movie
+    var requestUrl = "https://www.omdbapi.com/?apikey=45fd9a44&type=movie&t= ";
+    requestUrl = requestUrl + movieName;
+    fetch(requestUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            
+            var modalEL = document.createElement("div");
+            var mymodal = $('#myModal');
+            mymodal.find('.modal-title').text(movieName);
+            modalEL.innerHTML = `<p><h3>Language</h3> ${data.Language}</p>
+                                 <p><h3>Release Year</h3>  ${data.Year}</p>
+                                 <p><h3>Genre</h3>  ${data.Genre}</p>
+                                 `;
+            mymodal.find('.modal-body').append(modalEL);
+            mymodal.modal('show');
+            $('#myModal').modal('show');
+            
+            var movieInfo= data.Year+","+movieName+","+data.Language;
+            console.log(movieInfo +"movieInfo")
+            document.querySelector('.watchlater').addEventListener('click', () => {
+                saveForLAter(movieInfo)});
+            
+            
+           
+        });
+
+}
+
 //Change color of ratings based on the score
 function getClassByRate(vote) {
     if (vote >= 8) {
@@ -109,11 +142,13 @@ function retrieveSaveForLater() {
         for (var i = 0; i < allMovies.length; i++) {
 
             var createLi = document.createElement("li");
-            createLi.textContent = allMovies[i].movieTitle + " " + allMovies[i].movieAverage;
+            createLi.textContent = allMovies[i].movieTitle;
             createLi.style.listStyle = "none";
             movieListLaterEL.appendChild(createLi);
         }
+        laterWatchEL.style.display = "block";
         clear.style.display = "block";
+
     }
 }
 $(document).ready(function () {
