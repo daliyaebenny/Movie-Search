@@ -142,3 +142,9 @@ main {
     } 
 }
 
+
+#get_movie {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
