@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-
-# Project1
-## Movie Search
-Movie Search is a simple application that allows the user to search for movies that they want to watch based on their ratings. The app runs in the browser and has dynamically updated HTML and CSS(Bootstrap) powered by jQuery.  Our app is limited to serch based on movie titles.  When the user clicks the watch for later button for that particular movie, the movies get saved into local storage.
-
-The following images shows the web application's appearance and functionality:
-
-![screenshot]()
-
-## Technology used
-HTML,CSS,JavaScript,JQuery,Bootstrap
-
-### Links 
-* [*GitHub repository*]()   
-* [*GitHub pages*]()
-=======
 ### Name of the Project: ###
 Movie Catalog
 
@@ -32,7 +15,7 @@ As we all are movie lovers, we wanted to build a minimalistic web application th
     * CSS
     * Visual Studio Code Editor
     * Javascript
-    * API-Themoviedb
+    * API-Themoviedb,omdb
     * Bootstrap
 
 
@@ -54,4 +37,3 @@ As we all are movie lovers, we wanted to build a minimalistic web application th
 5. All Movies added to favorites list will be displayed in the "favorite list" section on the top. This section has a button to clear the list.
 
 Live deployed link:
->>>>>>> 46d8a97db210acd8a6878ea04fdf1b5a880d82a1

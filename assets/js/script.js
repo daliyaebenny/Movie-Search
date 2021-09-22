@@ -146,7 +146,9 @@ function retrieveSaveForLater() {
             createLi.style.listStyle = "none";
             movieListLaterEL.appendChild(createLi);
         }
+        laterWatchEL.style.display = "block";
         clear.style.display = "block";
+
     }
 }
 $(document).ready(function () {
