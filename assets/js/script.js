@@ -110,7 +110,7 @@ function retrieveSaveForLater() {
 
             var createLi = document.createElement("li");
             createLi.textContent = allMovies[i].movieTitle + " " + allMovies[i].movieAverage;
-            createLi.style.listStyle = "none";
+            //createLi.style.listStyle = "none";
             movieListLaterEL.appendChild(createLi);
         }
         clear.style.display = "block";

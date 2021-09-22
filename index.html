@@ -13,15 +13,17 @@
 </head>
 
 <body>
-    <header>
-        <form id="form">
-
+    <header> 
+        <h1 id=title>Movie Catalog</h1>
+         <form id="form">
+            
             <input type="text" id="search" placeholder="Search for Movies" class="search" />
             <button class="btn btn-primary mb-2" id="get_movie">Search</button>
 
         </form>
     </header>
     <aside id="laterWatch">
+        <div id=favorites><u>Favorites:</u></div>
         <div id="movieList"></div>
         <button class="btn btn-primary mb-2" id="clear" style="display:none;">Clear</button>
     </aside>
