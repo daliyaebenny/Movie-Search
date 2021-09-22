@@ -106,22 +106,26 @@ main {
 .overview h3 {
     margin-top: 0;
 }
-
+.modal-title{
+    font-size: large;
+    font-weight: bold;
+}
+.modal-body  h3{
+    font-weight: bold;
+}
 .movie:hover .overview {
     transform: translateY(0);
 }
 #laterWatch{
     
-    position:sticky;
-    top:100px;
-    background-color:beige;
+    /* position:sticky;
+    top:100px; */
+    background-color:rgb(141, 141, 108);
     color :black;
     z-index: 1;
     text-decoration: none;
 }
-#clear{
-    padding :2%;
-}
+
 #form {
     display: block;
 }
