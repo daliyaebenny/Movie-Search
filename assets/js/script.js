@@ -36,7 +36,7 @@ function showMovies(movies) {
             </div>
             <div class="overview">
                 <h3>Overview:</h3>
-                ${overview}
+                <p>${overview}</p>
                 <button id ="saveMovie" class="btn btn-primary mb-2" onClick="saveForLAter(' ${IMGPATH + poster_path},${title}, ${vote_average}')">Watch Later</button> 
                 <button type="button" class="btn btn-primary" onClick="showMore('${title}')" data-toggle="modal" data-target="#exampleModalCenter">
                 More
@@ -63,7 +63,7 @@ function showMore(movieName) {
                                  <p><h3>Release Year</h3>  ${data.Year}</p>
                                  <p><h3>Genre</h3>  ${data.Genre}</p>
                                  `;
-            mymodal.find('.modal-body').append(modalEL);
+            mymodal.find('.modal-body').html(modalEL);
             mymodal.modal('show');
             $('#myModal').modal('show');
             
@@ -154,5 +154,5 @@ function retrieveSaveForLater() {
 $(document).ready(function () {
     //on load of the page,fetch trending movies from the API
     getMovies(APIURL);
-    retrieveSaveForLater()
+    retrieveSaveForLater();
 });
