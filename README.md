@@ -37,3 +37,4 @@ As we all are movie lovers, we wanted to build a minimalistic web application th
 5. All Movies added to favorites list will be displayed in the "favorite list" section on the top. This section has a button to clear the list.
 
 Live deployed link:
+https://github.com/daliyaebenny/Movie-Search.git
