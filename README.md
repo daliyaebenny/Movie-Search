@@ -38,3 +38,4 @@ As we all are movie lovers, we wanted to build a minimalistic web application th
 
 Live deployed link:
 https://github.com/daliyaebenny/Movie-Search.git
+https://daliyaebenny.github.io/Movie-Search/
