@@ -29,11 +29,11 @@ main {
 .search {
     background-color: transparent;
     border: 2px solid #22254b;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     font-family: inherit;
     font-size: 15px;
-    padding: 1rem 12rem;
+    /* padding: 1rem 12rem; */
 }
 
 .search::placeholder {
@@ -41,7 +41,7 @@ main {
 }
 
 .search:focus {
-    background-color: white;
+    /* background-color: white; */
     outline: none;
     color: black;
 }
@@ -119,27 +119,16 @@ main {
     transform: translateY(0);
 }
 #laterWatch{
-<<<<<<< HEAD
-    
-    /* position:sticky;
-    top:100px; */
-    background-color:rgb(141, 141, 108);
-    color :black;
-=======
     top:100px;
-    background-color:plum;
+    background-color:beige;
     color : #373b69;
->>>>>>> 46d8a97db210acd8a6878ea04fdf1b5a880d82a1
     z-index: 1;
     text-decoration: none;
-   margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
   
 }
-<<<<<<< HEAD
-
-=======
 #clear{
     padding : 0.5rem 2rem;
     margin: 10px;
@@ -147,7 +136,6 @@ main {
     border-radius: 20px;
    
 }
->>>>>>> 46d8a97db210acd8a6878ea04fdf1b5a880d82a1
 #form {
     display: block;
 }
