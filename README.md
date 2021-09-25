@@ -36,6 +36,8 @@ As we all are movie lovers, we wanted to build a minimalistic web application th
 4. Each Movie card contains short discription and has option to add it to favorites list.  
 5. All Movies added to favorites list will be displayed in the "favorite list" section on the top. This section has a button to clear the list.
 
+
 Live deployed link:
+=======
 https://github.com/daliyaebenny/Movie-Search.git
 https://daliyaebenny.github.io/Movie-Search/
